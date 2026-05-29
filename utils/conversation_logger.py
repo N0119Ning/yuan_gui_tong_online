@@ -3,9 +3,8 @@
 import os
 import json
 import time
-import urllib.request
-import urllib.error
-import urllib.parse
+from urllib import request, parse
+from urllib.error import HTTPError
 
 
 def _post(table: str, data: dict) -> bool:
@@ -15,7 +14,7 @@ def _post(table: str, data: dict) -> bool:
         print("[Logger] Supabase not configured")
         return False
 
-    req = urllib.request.Request(
+    req = request.Request(
         f"{url}/rest/v1/{table}",
         data=json.dumps(data).encode("utf-8"),
         headers={
@@ -27,9 +26,9 @@ def _post(table: str, data: dict) -> bool:
         method="POST",
     )
     try:
-        urllib.request.urlopen(req)
+        request.urlopen(req)
         return True
-    except urllib.error.HTTPError as e:
+    except HTTPError as e:
         print(f"[Logger] Supabase error: {e.code} {e.read().decode()[:200]}")
         return False
 
@@ -44,7 +43,7 @@ def log(query: str, answer: str, results: list, invite_code: str = "", feedback:
         for r in (results or [])[:5]
     ], ensure_ascii=False)
 
-    ok = _post("conversations", {
+    _post("conversations", {
         "timestamp": time.strftime("%Y-%m-%d %H:%M:%S"),
         "invite_code": invite_code,
         "query": query,
@@ -53,20 +52,16 @@ def log(query: str, answer: str, results: list, invite_code: str = "", feedback:
         "feedback": feedback,
         "helpful": helpful,
     })
-    if not ok:
-        print("[Logger] Failed to log conversation")
 
 
 def _patch(table: str, match: dict, data: dict) -> bool:
-    """Update row matching conditions."""
     url = os.environ.get("SUPABASE_URL", "")
     key = os.environ.get("SUPABASE_KEY", "")
     if not url or not key:
         return False
 
-    # Build query string from match dict
-    filters = "&".join(f"{k}=eq.{urllib.parse.quote(str(v))}" for k, v in match.items())
-    req = urllib.request.Request(
+    filters = "&".join(f"{k}=eq.{parse.quote(str(v))}" for k, v in match.items())
+    req = request.Request(
         f"{url}/rest/v1/{table}?{filters}",
         data=json.dumps(data).encode("utf-8"),
         headers={
@@ -78,15 +73,14 @@ def _patch(table: str, match: dict, data: dict) -> bool:
         method="PATCH",
     )
     try:
-        urllib.request.urlopen(req)
+        request.urlopen(req)
         return True
-    except urllib.error.HTTPError as e:
+    except HTTPError as e:
         print(f"[Logger] PATCH error: {e.code}")
         return False
 
 
 def update_feedback(timestamp: str, invite_code: str, feedback: str, helpful: int):
-    """Update feedback for the most recent matching conversation."""
     _patch("conversations",
            {"timestamp": timestamp, "invite_code": invite_code},
            {"feedback": feedback, "helpful": helpful})
@@ -99,12 +93,12 @@ def get_daily_usage(code: str) -> int:
         return 0
 
     today = time.strftime("%Y-%m-%d")
-    req = urllib.request.Request(
+    req = request.Request(
         f"{url}/rest/v1/conversations?select=id&invite_code=eq.{code}&timestamp=gte.{today}",
         headers={"apikey": key, "Authorization": f"Bearer {key}"},
     )
     try:
-        resp = urllib.request.urlopen(req)
+        resp = request.urlopen(req)
         rows = json.loads(resp.read().decode())
         return len(rows)
     except Exception:
