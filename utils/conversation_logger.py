@@ -1,24 +1,39 @@
-"""Conversation logger — Supabase backend, survives redeploy."""
+"""Conversation logger — Supabase REST API, no extra deps needed."""
 
 import os
 import json
 import time
-from supabase import create_client
+import urllib.request
+import urllib.error
 
 
-def _get_client():
+def _post(table: str, data: dict) -> bool:
     url = os.environ.get("SUPABASE_URL", "")
     key = os.environ.get("SUPABASE_KEY", "")
     if not url or not key:
-        return None
-    return create_client(url, key)
+        print("[Logger] Supabase not configured")
+        return False
+
+    req = urllib.request.Request(
+        f"{url}/rest/v1/{table}",
+        data=json.dumps(data).encode("utf-8"),
+        headers={
+            "apikey": key,
+            "Authorization": f"Bearer {key}",
+            "Content-Type": "application/json",
+            "Prefer": "return=minimal",
+        },
+        method="POST",
+    )
+    try:
+        urllib.request.urlopen(req)
+        return True
+    except urllib.error.HTTPError as e:
+        print(f"[Logger] Supabase error: {e.code} {e.read().decode()[:200]}")
+        return False
 
 
 def log(query: str, answer: str, results: list, invite_code: str = "", feedback: str = "", helpful: int = 0):
-    client = _get_client()
-    if client is None:
-        return
-
     retrieved_json = json.dumps([
         {
             "standard": r.get("metadata", {}).get("standard_code", ""),
@@ -28,7 +43,7 @@ def log(query: str, answer: str, results: list, invite_code: str = "", feedback:
         for r in (results or [])[:5]
     ], ensure_ascii=False)
 
-    client.table("conversations").insert({
+    ok = _post("conversations", {
         "timestamp": time.strftime("%Y-%m-%d %H:%M:%S"),
         "invite_code": invite_code,
         "query": query,
@@ -36,16 +51,25 @@ def log(query: str, answer: str, results: list, invite_code: str = "", feedback:
         "retrieved": retrieved_json,
         "feedback": feedback,
         "helpful": helpful,
-    }).execute()
+    })
+    if not ok:
+        print("[Logger] Failed to log conversation")
 
 
 def get_daily_usage(code: str) -> int:
-    client = _get_client()
-    if client is None:
+    url = os.environ.get("SUPABASE_URL", "")
+    key = os.environ.get("SUPABASE_KEY", "")
+    if not url or not key:
         return 0
+
     today = time.strftime("%Y-%m-%d")
+    req = urllib.request.Request(
+        f"{url}/rest/v1/conversations?select=id&invite_code=eq.{code}&timestamp=gte.{today}",
+        headers={"apikey": key, "Authorization": f"Bearer {key}"},
+    )
     try:
-        r = client.table("conversations").select("id", count="exact").eq("invite_code", code).gte("timestamp", today).execute()
-        return r.count or 0
+        resp = urllib.request.urlopen(req)
+        rows = json.loads(resp.read().decode())
+        return len(rows)
     except Exception:
         return 0
