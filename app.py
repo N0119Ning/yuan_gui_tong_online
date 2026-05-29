@@ -297,9 +297,27 @@ def _update_feedback_in_db(msg_idx: int, feedback: str, helpful: int):
     a_msg = msgs[msg_idx] if msg_idx < len(msgs) else {}
     ts = a_msg.get("log_ts", "")
     code = st.session_state.verified_code or ""
-    if ts and code:
-        from utils.conversation_logger import update_feedback
-        update_feedback(ts, code, feedback, helpful)
+    if not ts or not code:
+        return
+    try:
+        import json as _json
+        from urllib import request
+        url = os.environ.get("SUPABASE_URL", "")
+        key = os.environ.get("SUPABASE_KEY", "")
+        if not url or not key:
+            return
+        req = request.Request(
+            f"{url}/rest/v1/conversations?timestamp=eq.{ts}&invite_code=eq.{code}",
+            data=_json.dumps({"feedback": feedback, "helpful": helpful}).encode("utf-8"),
+            headers={
+                "apikey": key, "Authorization": f"Bearer {key}",
+                "Content-Type": "application/json", "Prefer": "return=minimal",
+            },
+            method="PATCH",
+        )
+        request.urlopen(req)
+    except Exception:
+        pass
 
 
 def _render_thumbs(msg_idx: int):
