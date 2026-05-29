@@ -301,13 +301,15 @@ def _update_feedback_in_db(msg_idx: int, feedback: str, helpful: int):
         return
     try:
         import json as _json
-        from urllib import request
+        from urllib import request, parse
         url = os.environ.get("SUPABASE_URL", "")
         key = os.environ.get("SUPABASE_KEY", "")
         if not url or not key:
             return
+        qts = parse.quote(ts)
+        qcode = parse.quote(code)
         req = request.Request(
-            f"{url}/rest/v1/conversations?timestamp=eq.{ts}&invite_code=eq.{code}",
+            f"{url}/rest/v1/conversations?timestamp=eq.{qts}&invite_code=eq.{qcode}",
             data=_json.dumps({"feedback": feedback, "helpful": helpful}).encode("utf-8"),
             headers={
                 "apikey": key, "Authorization": f"Bearer {key}",
@@ -601,16 +603,14 @@ def main():
 
                         st.markdown(answer)
 
-                        import time as _time
-                        _ts = _time.strftime("%Y-%m-%d %H:%M:%S")
+                        from utils.conversation_logger import log
+                        _ts = log(prompt, answer, results, invite_code=st.session_state.verified_code or "")
                         st.session_state.messages.append({
                             "role": "assistant",
                             "content": answer,
                             "results": results,
                             "log_ts": _ts,
                         })
-                        from utils.conversation_logger import log
-                        log(prompt, answer, results, invite_code=st.session_state.verified_code or "")
                         st.rerun()
 
                     except Exception as e:

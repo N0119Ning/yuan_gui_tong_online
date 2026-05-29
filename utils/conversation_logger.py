@@ -33,7 +33,9 @@ def _post(table: str, data: dict) -> bool:
         return False
 
 
-def log(query: str, answer: str, results: list, invite_code: str = "", feedback: str = "", helpful: int = 0):
+def log(query: str, answer: str, results: list, invite_code: str = "", feedback: str = "", helpful: int = 0) -> str:
+    """Log conversation. Returns the timestamp used for matching updates."""
+    ts = time.strftime("%Y-%m-%d %H:%M:%S")
     retrieved_json = json.dumps([
         {
             "standard": r.get("metadata", {}).get("standard_code", ""),
@@ -44,7 +46,7 @@ def log(query: str, answer: str, results: list, invite_code: str = "", feedback:
     ], ensure_ascii=False)
 
     _post("conversations", {
-        "timestamp": time.strftime("%Y-%m-%d %H:%M:%S"),
+        "timestamp": ts,
         "invite_code": invite_code,
         "query": query,
         "answer": answer[:2000],
@@ -52,6 +54,7 @@ def log(query: str, answer: str, results: list, invite_code: str = "", feedback:
         "feedback": feedback,
         "helpful": helpful,
     })
+    return ts
 
 
 def _patch(table: str, match: dict, data: dict) -> bool:
