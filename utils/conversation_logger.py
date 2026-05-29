@@ -5,6 +5,7 @@ import json
 import time
 import urllib.request
 import urllib.error
+import urllib.parse
 
 
 def _post(table: str, data: dict) -> bool:
@@ -54,6 +55,41 @@ def log(query: str, answer: str, results: list, invite_code: str = "", feedback:
     })
     if not ok:
         print("[Logger] Failed to log conversation")
+
+
+def _patch(table: str, match: dict, data: dict) -> bool:
+    """Update row matching conditions."""
+    url = os.environ.get("SUPABASE_URL", "")
+    key = os.environ.get("SUPABASE_KEY", "")
+    if not url or not key:
+        return False
+
+    # Build query string from match dict
+    filters = "&".join(f"{k}=eq.{urllib.parse.quote(str(v))}" for k, v in match.items())
+    req = urllib.request.Request(
+        f"{url}/rest/v1/{table}?{filters}",
+        data=json.dumps(data).encode("utf-8"),
+        headers={
+            "apikey": key,
+            "Authorization": f"Bearer {key}",
+            "Content-Type": "application/json",
+            "Prefer": "return=minimal",
+        },
+        method="PATCH",
+    )
+    try:
+        urllib.request.urlopen(req)
+        return True
+    except urllib.error.HTTPError as e:
+        print(f"[Logger] PATCH error: {e.code}")
+        return False
+
+
+def update_feedback(timestamp: str, invite_code: str, feedback: str, helpful: int):
+    """Update feedback for the most recent matching conversation."""
+    _patch("conversations",
+           {"timestamp": timestamp, "invite_code": invite_code},
+           {"feedback": feedback, "helpful": helpful})
 
 
 def get_daily_usage(code: str) -> int:

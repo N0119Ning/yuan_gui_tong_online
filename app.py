@@ -291,6 +291,17 @@ def check_model_cache() -> bool:
     return all((model_path / f).exists() for f in required)
 
 
+def _update_feedback_in_db(msg_idx: int, feedback: str, helpful: int):
+    """Update Supabase with like/dislike feedback."""
+    msgs = st.session_state.messages
+    a_msg = msgs[msg_idx] if msg_idx < len(msgs) else {}
+    ts = a_msg.get("log_ts", "")
+    code = st.session_state.verified_code or ""
+    if ts and code:
+        from utils.conversation_logger import update_feedback
+        update_feedback(ts, code, feedback, helpful)
+
+
 def _render_thumbs(msg_idx: int):
     """Render like/dislike buttons for an assistant message."""
     fkey = f"feedback_{msg_idx}"
@@ -303,6 +314,7 @@ def _render_thumbs(msg_idx: int):
         with c1:
             if st.button("👍", key=f"like_{msg_idx}", help="有帮助"):
                 st.session_state[fkey] = "like"
+                _update_feedback_in_db(msg_idx, "有帮助", 1)
                 st.rerun()
         with c2:
             if st.button("👎", key=f"dislike_{msg_idx}", help="有问题"):
@@ -320,6 +332,7 @@ def _render_thumbs(msg_idx: int):
                 q = msgs[msg_idx - 1]["content"] if msg_idx > 0 else ""
                 a = msgs[msg_idx]["content"]
                 log_badcase(q, a, msgs[msg_idx].get("results", []), fb or "用户点踩")
+                _update_feedback_in_db(msg_idx, fb or "用户点踩", -1)
                 st.session_state[fkey] = "done"
                 st.rerun()
         with c2:
@@ -570,10 +583,13 @@ def main():
 
                         st.markdown(answer)
 
+                        import time as _time
+                        _ts = _time.strftime("%Y-%m-%d %H:%M:%S")
                         st.session_state.messages.append({
                             "role": "assistant",
                             "content": answer,
                             "results": results,
+                            "log_ts": _ts,
                         })
                         from utils.conversation_logger import log
                         log(prompt, answer, results, invite_code=st.session_state.verified_code or "")
