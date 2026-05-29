@@ -404,8 +404,7 @@ def main():
             <h2>欢迎使用园规通！</h2>
             <p style="color:#374151;font-size:1rem;">
             覆盖 <b>9本</b> 风景园林核心国标/行标<br>
-            <b>1168条</b> 条款 · PaddleOCR 扫描件精准识别<br>
-            BGE-M3 语义检索 + DeepSeek 精确引用回答
+            <b>9本规范 · 1168条条款</b>
             </p>
         </div>
         """, unsafe_allow_html=True)
@@ -631,7 +630,7 @@ def load_and_build_kb():
 
 
 def load_existing_kb():
-    with st.spinner("正在加载 BGE-M3 模型 (~2GB)...约需 30 秒"):
+    with st.spinner("正在加载知识库..."):
         try:
             from rag.knowledge_base import KnowledgeBase
             kb = KnowledgeBase()
@@ -642,7 +641,7 @@ def load_existing_kb():
                 st.session_state.kb = kb
                 st.session_state.kb_ready = True
                 st.success(f"已加载 {stats['total_clauses']} 条条款 · "
-                          f"{len(stats['standards'])} 本规范 · BGE-M3 就绪")
+                          f"{len(stats['standards'])} 本规范")
         except Exception as e:
             st.error(f"加载失败: {e}")
 
