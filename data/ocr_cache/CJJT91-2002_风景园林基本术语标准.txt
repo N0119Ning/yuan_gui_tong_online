@@ -1,0 +1,213 @@
+# CJJT91 风景园林基本术语标准
+
+## 第1页
+
+前言根据住房和城乡建设部《关于印发（2010年工程建设标准规范制订、修订计划〉的通知》（建标［2010］43号）的要求，标准编制组经广泛调查研究，认真总结实践经验，参考有关国际标准和国外先进标准，并在广泛征求意见的基础上，修订了本标准。本标准的主要技术内容是：总则；2.通用术语；3.风景名胜区；4．城市绿地系统；，风景园林史；6．风景园林设计；7．园林工程；8．管理。本标准修订的主要技术内容是：1．调整标准名称；2．调整订部分原术语的定义；5．调整部分原术语的英文翻译；6．修订部分词条的定义说明。本标准由住房和城乡建设部负责管理，由中国城市建设研究院有限公司负责具体技术内容的解释。执行过程中如有意见或建议，请寄送中国城市建设研究院有限公司（地址：北京市西城区德胜门外大街36号，邮编：100120）。本标准主编单位：中国城市建设研究院有限公司本标准参编单位：北京林业大学同济大学北京易兰建筑规划设计有限公司北京市园林绿化局本标准主要起草人员：李金路朱婕妤赵彩君刘晓明周向频唐艳红林广勋安友丰王玉杰4
+
+## 第2页
+
+本标准主要审查人员：张树林杨赉丽王磐岩徐波贾建中朱虹李炜民徐住房城乡建设部信息公开付彦荣浏览专用
+
+## 第3页
+
+目次1总则2通用术语3风景名胜区3.1风景名胜区3.2风景名胜区规划4城市绿地系统4.1城市绿地4.2城市绿地系统规划5风景园林史····5.1古典园林传统园林理法0.2风景园林设计6.地形设计种植设计6.4园路及铺装设计166.5园林建筑设计6.6小品及设施设计816.7水景设计6.8设计成果197园林工程··207.1假山工程207.2水体工程217.3植物材料27.4种植工程226
+
+## 第4页
+
+8管理·248.1综合管理248.2工程管理248.3养护管理25附录A中文索引27附录B英文索引37本标准用词说明47浏览专用住房城乡建设部信息
+
+## 第5页
+
+ContentsGeneral Provisions·2General Terms3Scenic andHistoricAreas·3.1SScenic and HistoricAreas3.2Scenic and Historic Areas Planning4：Urban Green Space4.1Urban Green Space4.2Urban GreenSpacePlanning5.1Classical1313PlantingDesign46.40GardenPath and PavementDesign166.5(GardenBuilding Design176.6Small Garden Ornaments and SiteFurnitureDesign186.7Waterscape Design186.8Design Achievement197 Landscape Construction Engineering207.11Rockwork207.2Water System217.3Plant Material21Planting227.48
+
+## 第6页
+
+8Management248.1Integrated Management248.2ProjectManagement248.3Maintenance25住房城乡建设部信息AppendixAChineseIndex27Appendix BEnglish Index.....37Explanation ofWordinginThisStandard47浏览专用C
+
+## 第7页
+
+1总则1.0.2本标准适用于风景园林行业的规划、设计、施工、养护、管理、科研、教学及其他相关领域。1.0.3风景园林使用的术语除应符合本标准外，尚应符合国家现行有关标准的规定。浏览专用住房城乡建设部
+
+## 第8页
+
+2通用术语2.0.1风景园林landscapearchitecture通过保护和利用人文与自然环境资源保留和创造出的各种优美境域的统称。2.0.2风景园林学landscape architecture研究风景园林及其发生、发展及演变规律的学科。2.0.3园林garden and park在一定地域内运用工程技术和艺术手段，创作而成的优美的游憩境域。world heritage2.0.4世界遗产由联合国教科文组织确认的，具有全球突出价值的文物古迹、自然景观或自然生境。2.0.5风景名胜区scenic and historic areas依法设立和管理的具有观赏、文化或者科学价值，自然景观、人文景观比较集中，环境优美，可供人们游览或者进行科学、文化活动的区域。2.0.6城市绿地urban green space城市中以植被为主要形态且具有一定功能和用途的一类用地。2.0.7城市绿地系统urban green space system城市中各种类型、级别和规模的绿地组合而成并能行使各项功能的有机整体。2.0.8公园park向公众开放，以游憩为主要功能，有较完善的设施，兼具生态、美化、科普宣教及防灾等作用的场所。2.0.9国家公园national park2
+
+## 第9页
+
+国家依法设立和管理的，以自然景观和自然生态为基础，自然与文化相融合，具有科研、审美、教育、游憩功能，体现国家代表性和社会公益性的保护区域。2.0.10园林工程landscapeconstructionengineeri园林中除建筑工程以外的室外工程。浏览专用
+
+## 第10页
+
+3风景名胜区3.1风景名胜区3.1.1风景名胜famous scenery，famousscenic site具有观赏、文化或者科学价值，自然景观、人文景观比较集中，环境优美，可供人们游览或者进行科学、文化活动的区域。3.1.2风景资源scenic resource能引起审美与鉴赏活动，可用于风景保护和利用的事物与因素的总称。3.1.3景观landscape可引起良好视觉感受的景象。3.1.4景物Jandscape feature3.1.5景点scenic spot由个或若干景物构成，具有独立审美特征的境域。3.1.6.景区scenic zone，landscape zone风景名胜区中根据风景资源的景观特征或游人观赏需求划分的次级区域。3.1.7核心景区coresceniczone，corelandscapezone风景名胜区内自然景观和人文景观最集中、价值最突出，生态环境最敏感，实行严格禁止建设的区域。3.1.8国家级风景名胜区scenic and historic areas of China经国务院审定公布的风景名胜区。3.2风景名胜区规划3.2.1风景名胜区规划Jscenic and historic areas planning保护培育、开发建设和经营管理风景名胜区，并发挥其多种4
+
+## 第11页
+
+功能作用的统筹部署和具体安排。3.2.2风景名胜区体系scenic and historic areas system在一定的地域范围内，由不同类型和等级的风景名胜区组成的，主要用于保护、利用、管理并能同意协调发展的风景名胜资源的空间系统。3.2.3风景资源评价landscapeevaluation对风景资源进行调查与评估的活动。3.2.4居民社会调控规划social regulation planning for resi-dents对风景名胜区内的居民点、居民人口等实施控制、调整、引导，协调风景名胜区与居民社会发展关系的具体安排。3.2.5游览线touring routeN为游人安排的游览、欣赏风景的路线，3.2.6智慧景区smart scenic and historic areas在数字景区的基础上，运用物联网、云计算等新一代信息技术，收集、传输、处理和分析城市海量信息，构建智能化的景区信息技术应用体系，实现业务协同和工作联动，提升景区综合承载能力，实现系统管理的景区。5
+
+## 第12页
+
+4城市绿地系统4.1城市绿地4.1.1公园绿地public park向公众开放，以游憩为主要功能，兼具生态、美化、科普宣教及防灾避险等作用，有一定游憩和服务设施的城市绿地。4.1.2综合公园comprehensive park内容丰富，有相应设施，适合于公众开展各类户外活动的规模较大的绿地。N4.1.3专类公园specialized park具有特定内容或形式，有一定游憩设施的绿地4.1.4社区公园，residential park为一定居住用地范围内的居民服务，具有一定活动内容和设施的集中绿地。4.1.5儿童公园childrenpark单独设置的，为少年儿童提供游戏及开展科普、文化活动，有安全、完善设施的公园。4.1.6动物园zoological garden，zoo在人工饲养条件下，移地保护野生动物，供观赏、普及科学知识，进行科学研究和动物繁育，并具有良好设施的绿地。4.1.7植物园botanical garden进行植物科学研究和引种驯化，并供观赏、游憩及开展科普活动的绿地。4.1.8岩石园rock garden模拟自然界岩石及岩生植物景观，附属于公园内或独立设置的专类公园。4.1.9盆景园penjing garden, miniature landscape6
+
+## 第13页
+
+以盆景展示为主要内容的专类公园。4.1.10墓园Icemetery garden园林化的墓地。4.1.11盲人公园park for the blind以盲人为主要服务对象，配备以安全设施和服务设施，可以进行触觉感知、听觉感知和噢觉感知等活动的么4.1.12花园garden以植物观赏为主要功能的小型绿地4.1.13历史名园historical garden,historical park历史悠久、知名度高，体现传统造园艺术并被审定为文物保护单位的园林。4.1.14纪念公园memorial park以纪念历史事件、缅怀名人和革命烈士为主题的公园。4.1.15遗址公园archaeological and site park以重要遗址遗迹及其背景环境为主形成的，在遗址保护和展示方面具有示范意义的公园。4.1.16游乐公园amusement parl具有大型游乐设施，单独设置，生态环境较好的绿地。4.1.17带状公园linear park沿城市道路、城墙、水系等，有一定游憩设施的狭长形绿地。4.1.18街旁绿地roadside green space位于城市道路用地之外，相对独立成片的绿地，包括街道广场绿地、小型沿街绿化用地等。4.1.19生产绿地nursery为城市绿化提供苗木、花草、种子的苗圃、花圃、草圃等圃地。4.1.20防护绿地protected green buffer城市中具有卫生、隔离和安全防护功能的绿地。4.1.21附属绿地attached green space7
+
+## 第14页
+
+城市建设用地中绿地之外各类用地中的附属绿化用地。4.1.22居住绿地green space attachedtohousingestate,idential green space城市居住用地内社区公园以外的绿地，包括组团绿地、宅旁绿地、配套公建绿地、小区道路绿地等。4.1.23道路绿地greenspace attached tourl城市道路用地内的绿地。4.1.24郊野公园country park位于城市郊区，规模较大，以野趣景观为主，可开展休闲、游憩、科普教育等活动，具备简要设施的公园。4.1.25城市湿地公园urban wetland park利用城市中的天然湿地，进行合理地保护利用，形成保护、科普、休闲等功能于一体的公园。4.1.26风景林地scenic forest land具有一定景观价值，对城市整体风貌和环境起改善作用，但尚没有完善的游览、休息、娱乐等设施的林地。Kv4.2城市绿地系统规划4.2城市绿地系统规划Jurbangreen space system planning对一定时期内各种城市绿地进行定性、定位、定量的统筹安排，形成具有合理结构的绿色空间系统，以最佳实现绿地所具有的生态保护、游憩休闲和社会文化等功能的活动。4.2.2绿化覆盖面积landscape coverage area，green coveragearea城市中所有植物的垂直投影面积。4.2.3绿化覆盖率greencoverageratio一定城市用地范围内，植物的垂直投影面积占该用地总面积的百分比。4.2.4绿地率green space ratio一定城市用地范围内，各类绿化用地总面积占该城市用地面8
+
+## 第15页
+
+积的百分比。4.2.5人均公园绿地面积parkland per capita一定城市用地范围内，常住人口的人均公园绿地占有4.2.6城市绿化隔离带urbangreenbuffer在城市组团之间、城市周围或相邻城市之间设置的用以改善环境和控制城市扩展的绿色开敬空间。4.2.7楔形绿地greenwedge从城市外围楔人城市内部的绿地，因反映在城市总平面图上呈楔形而得名。4.2.8城市绿线urban green space boundary line, urban greenline在城市规划建设中确定的各种城市绿地的边界线。4.2.9城市蓝线urban water body boundary line, urban blueline城市规划确定的江、河、湖、库、渠和湿地等城市地表水体保护和控制的地域界线。4.2.10绿道greenway以自然要素为依托和构成基础，串联城乡游憩、休闲等绿色开空间，以游憩、健身为主，兼具市民绿色出行和生物迁徙等功能的廊道。4.2.11生态廊道ecological corridor由植被、水体等生态性结构要素构成的，具有保护生物多样性、过滤污染物、防止水土流失、防风固沙、调控洪水等生态服务功能的线型空间。4.2.12生态敏感区ecological sensitive area对区域总体生态环境起决定性作用的大型生态要素和生态实体。4.2.13生态修复ecological restoration使遭到破坏的生态系统逐步恢复的活动。4.2.14城市生物多样性urban biodiversity9
+
+## 第16页
+
+一定时间和空间内所有生物物种及其遗传变异和生态系统的复杂性总称。住房城乡建设部信息公开4.2.15城市热岛效应urbanheat island effect城区气温明显高于外围郊区的现象。浏览专用10
+
+## 第17页
+
+5风景园林史5.1古典园林5.1.1古典园林classicalgarden对古代园林和具有典型古代园林风格的园林作品的统称。5.1.2传统园林traditional garden根据历史、文化和习俗而建的园林。5.1.3 囿 you garden,hunting garden中国古代早期供帝王贵族进行狩猎、游乐的一种园林类型。5.1.4苑yuan garden在囿的基础上发展起来的，建有宫室和别墅，供帝王居住、游乐、宴饮的一种园林类型。X5.1.5皇家园林imperial garden，royal garden古代皇帝或皇室享用的，以游乐、狩猎、休闲为主，兼有执政、居住等功能的园林。5.1.6私家园林private garden5.1.7寺庙园林temple garden寺庙、宫观和祠院等宗教建筑的附属花园。5.1.8文人园林literati garden中国古代文人为寄托理想、陶冶性情、追求诗情画意所建或受到文人趣味浸润而“文人化”的园林。5.1.9苏州园林Suzhou gardens泛指中国苏州地区古代建造的或者承传了当地典型造园技法的园林。11
+
+## 第18页
+
+5.2传统园林理法5.2.1相地site investigation，site assessment泛指对园址场地条件的勘察、体察、分析和利用5.2.2园林意境meaning of landscape通过园林的形象所反映的情感，使游赏者触景生情，产生情景交融的一种艺术境界。5.2.3造景landscaping使环境具有观赏价值或更高观赏价值的活动。5.2.4借景borrowing landscape对景观自身条件加以利用或借用外部景观从而完善园林自身的方法。N5.2.5对景corresponding views让景物产生呼应关系的造景手法。5.2.6障景obstacle view，view barrier遮住破坏景观的事物或者通过设置屏障遮住主景物从而增加空间层次的造景手法。5.2.7抑景arranged hidden scene用次景遮挡主景的造景手法。5.2.8夹景scenicvista在视景线两侧用建筑物、地形、树木等加以屏障、引导视线的造景方法。5.2.9漏景leak scene通过园墙或园廊上的漏窗间隙看到窗外景物的造景手法。5.2.10—池三山yi-chi-san-shan,one pool and three mountains古代园林中隐喻道教三仙山思想的造景手法。5.2.11盆景penjing呈现于盆器中的风景或园林花木景观的艺术缩制品。12
+
+## 第19页
+
+6风景园林设计6.1总体设计6.1.1园林布局landscapelayout对构成园林的各种重要因素之间的位置和相互关系进行的统筹安排。6.1.2风景园林设计landscape architecture design通过各种虚拟手段，利用造景元素创造宜人环境的创作过程。6.1.3场地设计site planning为满足建设项目的要求，在基地现状条件和相关法律法规、行业规范的基础上，组织场地中各构成要素之间关系的活动。6.1.4!竖向设计vertical design, landscape section and eleva-tions以场地现状地形条件为基础，以控制场地中各设计要素标高为重点的垂直空间安排。6.1.5雨洪管理设计drainage design and storm water man-agement引导、收集、利用、排放雨水及地表径流为目的的综合安排。6.1.6透景线view corridor在树木或其他物体中间保留的可透视远方景物的线性空间。6.1.7公园游人容量visitors capacity在一定时间内一定公园范围内所能容纳的合理的游人数量。6.2地形设计6.2.1地形设计landform design，grading design13
+
+## 第20页
+
+对原有地形、地貌进行工程结构和艺术造型改造的设计。6.2.2土石方平衡earthwork balance场地内挖方量和填方量基本一致的状态。6.2.3微地形nannorelief地形。6.2.4缓坡草坪mild-lawn在坡度较小地形上栽种的草坪。6.2.5挡土墙retaining wall6.2.6台地花园I mesa terrace garden利用台阶状地形修建而成的花园。6.2.7坡比值slope ratio两点之间垂直距离与水平距离的比值。6.2.8土壤安息角 angle of repose of soil堆积土壤的坡面与水平地面间所形成的最大稳定角度。6.3种植设计6.3.1X种植设计planting design按植物生态习性、观赏特性和功能要求，合理配置各种植物的综合安排。6.3.2立体绿化vertical greening平面绿化以外的其他所有绿化方式。6.3.3屋顶绿化roof greening在各类建筑物和构筑物顶面的绿化。6.3.4孤植specimen planting，isolated planting单株树木或同种几株紧密地种在一起，作为独立观赏焦点的栽植方式。6.3.5对植1symmetrical planting, coupled planting两株或两丛相似树木按一定轴线关系相对应、对称的植物配14
+
+## 第21页
+
+植方式。6.3.6列植linear planting沿直线或曲线以等株距或按一定的变化规律而进行的植物配植方式。6.3.7群植mass planting由多株树木混合成丛、成群的植物配植方6.3.8丛植group planting将一株以上树木配置成一个整体的植物配植方式。6.3.9种植密度planting density单位面积内种植的植株数量。6.3.10郁闭度森林中乔木树冠遮蔽地面的程度。6.3.11乔灌比 the planting ratio of trees and shrubs乔木与灌木种植数量的比例。6.3.12人工植物群落simulated plant community一定区域内·人工模仿自然植物群落栽植并符合植物生态习性的植物群体。6.3.13自然植物群落natural plant community定区域内，自然形成的植物群体。说明中注明互惠竞争关系。6.3.14疏林草地open forest and grassland具有稀疏上层乔木、以草本植被为主的植物景观。6.3.15花境flowerborder多种花卉自然式交错混合并带状种植的栽植形式。6.3.16绿篱hedge由木本植物成行密植而形成的植物墙篱。6.3.17行道树寸avenue tree，street tree种在道路两旁及分车带，为车辆和行人遮阴并构成街景的树。6.3.18树阵tree array15
+
+## 第22页
+
+阵列式规则种植的乔木栽植方式。6.3.19种植池（钵）planter用以栽种植物的空间或器物。6.3.20植物季相seasonal appearance of plant植物因季节变化表现出的外观。6.3.21适地适树matchingspecieswith the6.3.22林冠线canopy line of the plant树冠与天空的交际线。6.3.23林缘线forest edge树林或树丛，花木边缘上树冠垂直投影于地面的连接线。6.4园路及铺装设计6.4.1平曲线planecurve专用6.4.2竖曲线yertical curve连接两相邻坡段的曲线。6.4.3汀步stepping stone按照一定间距设置的微露水面的踏步。6.4.4园桥landscape bridge园林中架空并用于联系水陆交通的人造设施。6.4.5栈道plank road built along a cliff原指沿悬崖峭壁修建的或古代高楼间架空的通道。6.4.6蹬道stone stair与山体结合的有踏级的道路。6.4.7花街铺地feature pavement园林中拼缀而成的，具有装饰图案的道路和广场。6.4.8石子画pebble painting在园林中运用石子及砖、瓦等碎料拼合而成的图案。16
+
+## 第23页
+
+6.4.9无障碍坡道ease accessfor thedisabled适宜行动不便的人使用的坡道。6.5园林建筑设计6.5.1园林建筑garden structure的统称。6.5.2游客服务中心visitor center为游客提供综合游览服务的专门场所。6.5.3温室greenhouse能透光、保温，用来栽培植物的设施6.5.4亭pavilionXN供人休息和赏景的有顶开性建筑，6.5.5台platform6.5.6楼、storied building两层以上的建筑物。6.5.7阁pavilion泛指两层以上架空的点式建筑物6.5.8厅堂hall用于聚会、待客等的宽房间。6.5.9廊corridor屋檐下的过道、房屋内的通道或独立有顶的通道。6.5.10榭waterfront pavilion建在高土台或临水而设的木屋。6.5.11舫boat house临水而建的一种船形建筑物。6.5.12云墙cloud wall墙头呈云状弧形起伏的墙体。6.5.13照壁screen wall17
+
+## 第24页
+
+庭院外设置的具有风水作用的墙体。6.5.14牌坊memorial arch形状像牌楼的建筑物。6.5.15塔tower佛教特有的高耸、多层点状建筑物。6.5.16洞门holegate开在园墙上形状多样的装饰性门洞。6.5.17漏窗glassless windows开在园墙上的装饰性透空窗。部信息公开6.6小品及设施设计6.6.1 园林小品small garden Ornaments and site furniture6.6.2花架pergola, trellis供植物攀附的格架。6.6.3景墙feature wall园林中具有观赏价值的墙体。6.6.4园林楹联couplet written on scroll，couplet on pillar悬挂或张贴在园林建筑壁柱上的竖排联句。6.6.5园林匾额bian'e in garden挂在厅堂或亭榭等园林建筑上的题字横牌。6.6.6标识牌signboard用于指示景点及服务设施、科普解说的牌子。6.7水景设计6.7.1园林理水water system layout in garden园林中的各类水体的梳理和布局。6.7.2驳岸revetment in garden保护园林水体岸边的工程设施。6.7.3护坡slope protection18
+
+## 第25页
+
+为防止边坡变形，在坡面上所做的各种绿化与工程措施的统称。6.7.4喷泉fountain经加压后形成的人工喷水设备。6.7.5瀑布water-fall垂直跌落的高落差水流。6.7.6跌水drop垂直跌落的较小落差的水流。6.7.7叠水cascading连续台阶状平流并跌落的水流6.7.8水帘nappeW6.8设计成果专用6.8.1方案设计、schematic design立足场地现状，针对设计目标及问题所制定的整体安排。6.8.2扩初设计design development_扩展深化方案设计，明确园林绿地中各要素的具体形态及结构，用以指导施工图阶段的设计活动。6.8.3施工图设计construction design，working drawing在扩初设计的基础上，明确园林绿地中各要素的工程做法的设计活动。19
+
+## 第26页
+
+园林工程77.1假山工程7.1.1假山man-made rockery以造景为目的，用土、石等材料构筑的园林土山或石山。7.1.2山piled hill,hill making用自然山石叠成假山的活动。7.1.3塑山artificial rockery用艺术手法将人工材料模拟建造自然山体的活动。7.1.4置石stone arrangement, stone setting以石材或仿石材料布置成自然露岩景观的造景手法。7.1.5　景石landscape stone园林景观中起到点缀、美化景观作用的自身具有一定美感的石头。7.1.6太湖石taihu rock原产于太湖一带，具有水蚀特征的观赏石。7.1.7特置special setting独立而特殊布置形成景致的山石。7.1.8踏tap-stamp step园林建筑出入口的自然山石台阶。7.1.9蹲配squatting side rock石级两端的梯形基座。7.1.10抱角Jcorner rap stone环抱于墙体外角的砌石。7.1.11镶隅corner filling set镶嵌于墙体内角的砌石。7.1.12云梯aerialladders20
+
+## 第27页
+
+室外以山石成的楼梯。7.1.13压顶capping砌筑物顶部用以增强结构整体性的覆盖层。7.1.14拉底euphrates，footing在基础上铺置最底层的自然山石。7.1.15收顶top end假山最顶层的山石处理。信息公开7.1.16山“十字诀”tten-word pithy formt总结假山工艺中山石结体的基本形式的十余字口诀。7.27水体工程7.2.1溢水口overfall gap在水景容器高位处，为避免容器内水面过高而设置的溢流口。H7.2.2泄水口drain opening水体或渠道的出水口。7.2.3滚水坝overflow dam7.3植物材料7.3.1园林植物landscape plant适用于园林中栽植且具有观赏价值的植物。7.3.2观赏植物ornamentalplant专门培植，用以供人欣赏的植物。7.3.3乡土植物native specie原产于本地或通过长期引种驯化适应本地生长的植物。7.3.4宿根花卉perennial flower植株地下部分可以宿存于土壤中越冬，翌年春天地上部分又可萌发生长、开花结籽的花卉。7.3.5地被植物ground cover plant21
+
+## 第28页
+
+用于覆盖地面的密集、低矮、无主枝干的植物。7.3.6攀缘植物tendrilclimberplant是指能缠绕或依靠附属器官攀附他物向上生长的植物7.3.7草坪lawn园林中用人工铺植草皮或播种草子培养形成的整片绿色地面。7.3.8古树名木historical tree and famous tree树龄在一百年以上的树木，珍贵稀有的树木，具有历史、文化、科研价值和重要纪念意义等树木的统称。7.3.9古树后续资源historical treepotential resources树龄接近百年的树木。7.3.10易地保护place other than one's own hometown allopatry, exsitu conservation将原栖息地物种迁移到其他地区，进行引种驯化并恢复种群的措施。7.4种植7.4.1基础种植foundation planting紧靠建筑立面与地面的交接处的植物种植。7.4.2整地land preparation工程施工前对场地进行的一系列整理措施的总称。7.4.3客土borrowed soil非种植区原生、由别处移来用于置换原生土的外部土壤。7.4.4种植土planting soil理化性状良好，适宜于园林植物生长的土壤。7.4.5号苗choosing seedlings选择符合设计要求的苗木并做标记的活动。7.4.6裸根苗木bare-root seedling根部不带土或仅带护心土的苗木。7.4.7容器苗plants of container22
+
+## 第29页
+
+利用各种容器培育的苗木。7.4.8大树移植big tree transplanting胸径大于20cm的落叶乔木和胸径大于15cm的常绿乔木移栽到异地的活动。7.4.9带土球移植transplantingwithsoilball树木移植时随带根系周围原生长处土壤，并将其捆扎成土球的移植方式。7.4.10定植field planting苗木按照一定的株行距进行栽植的过程。7.4.11定根水setting root water新植苗木后的浇灌水。－7.4.12假植苗木不能及时栽植时，将苗木根系用湿润土壤做临时性填埋的绿化工程措施。>7.4.13浸穴 pre-watering planting hole种植树木前对树穴进行灌水的活动。7.4.14种植穴（槽）plant hole and trough种植植物挖掘的坑穴。坑穴为圆形或长方形称种植穴，长条形的称种植槽。7.4.15种植成活率plants survival rate种植植物的成活数量占种植植物总量的百分比。7.4.16喷灌sprinkler irrigation利用喷头等专用设备把有压水喷洒到空中，形成水滴落到植物表面的灌溉方法。7.4.17胸径diameter of trunk乔木主十距离地表面1.3m处的直径。7.4.18分枝点branch point乔木主干距地面最近的分枝部位。23
+
+## 第30页
+
+8管8.1综合管理8.1.1园林城市garden city根据国家主管部门评选出的城市绿地分布均衡、结构合理、功能完善、景观优美，人居生态环境清新舒适、安全宜人的城市。8.1.2生态园林城市j ecological garden city具有宜人的生态环境和美好的城市景观，是人们在目前生态环境恶劣、城市景观特色不突出的状况下，渴望实现的→个理想城市建构模式。H以保护和可持续利用生态系统服务为目的，以经济手段为主，调节相关者利益关系的制度安排。在城市绿地建设中，最大限度地节约各种资源，提高资源的循环利用率，减少能源消耗的园林模式。8.1.5特许经营franchise公民、法人或者其他组织按照特定程序、法定标准和条件，在一定期限和范围内，有偿取得从事风景名胜区内整体或者单个项目投资、经营权利的活动。8.2工程管理8.2.1园林工程管理landscape architecture management对园林工程项目施工全过程进行的综合管理活动。8.2.2施工组织设计general contracting plan用来指导施工项目全过程各项活动的技术、经济和组织的综24
+
+## 第31页
+
+合安排。8.2.3设计交底constructiondocumentexplanation设计单位就施工图设计文件向施工单位和监理单位做出的详细说明。8.2.4设计变更design alteration设计单位依据建设单位要求调整或对原设计内容进行修改、完善、优化的活动。8.2.5工程洽商engineering negotiationconstruction requestform施工单位就施工图纸、设计变更所确定的工程内容以外，施工图预算或预算定额取费中未包含的，而施工中又实际发生费用的施工内容所进行的商權活动。N8.2.6工程监理! engineering supervision对承建单位的工程建设实施监控的活动8.3养护管8.3.1追肥adding fertilizer植物生长中加施的肥料。植物栽植前，为保障基本肥力所施用的肥料。8.3.3修剪pruning将植物的某一部分剪短或疏删，以达到平衡树势、更新复壮、美观的活动。8.3.4古树复壮rejuvenation of old tree对生长势衰弱的古树采取相应措施，以恢复生理机能和促进生长态势的活动。8.3.5病虫害防治pest control对园林病害和虫害的发生及危害进行综合预防和控制的活动。8.3.6整形shaping25
+
+## 第32页
+
+对植株施行一定的修剪措施而形成某种树体结构形态的活动。8.3.7疏枝sparse将树木中过密的枝条，从贴近着生部或地面位置剪除的方法。V8.3.8短截cuttingback少枝条并刺激侧芽萌发新梢的活动。浏览专用26
+
+## 第33页
+
+附录A中文索引B抱角7.1.10标识牌6.6.6病虫害防治8.3.5驳岸6.7.2浏览专用草坪7.3.7场地设计6.1.3城市蓝线4.2.92.0.6城市绿地系统2.0.7城市绿地系统规划4.2.1城市绿化隔离带4.2.6城市绿线4.2.8城市热岛效应4.2.15城市生物多样性4.2.14城市湿地公园4.1.25传统园林5.1.2丛植6.3.8D大树移植7.4.827
+
+## 第34页
+
+带土球移植7.4.9带状公园4.1.17挡土墙6.2.5道路绿地23蹬道地被植物.3.5地形设计6.2.1跌水6.7.6叠水6.7.7定根水7.4.11定植7.4.10动物园1.6洞门浏览专.5.16用短截8.3.8对景5.2.5对植6.3.5蹲配7.1.9山7.1.2山“字诀”7.1.16E儿童公园4.1.5F方案设计6.8.1防护绿地4.1.20舫6.5.11分枝点7.4.1828
+
+## 第35页
+
+风景林地4.1.26风景名胜风景名胜区风景名胜区规划风景名胜区体系风景园林.0.1风景园林设计6.1.2风景园林学2.0.2风景资源3.1.2风景资源评价3.2.3附属绿地4.1.21G阁6.5.7工程监理8.2.68.2.5浏览专用公园2.0.8公园绿地4. 1.1公园游人容量6.1.7孤植6.3.4古典园林5.1.1古树复壮8.3.4古树后续资源7.3.9古树名木7.3.8观赏植物7.3.2滚水坝7.2.3国家公园2.0.9国家级风景名胜区3.1.829
+
+## 第36页
+
+H行道树号苗核心景区护坡7.3花架6.6.2花街铺地6.4.7花境6.3.15花园4.1.12缓坡草坪6.2.4浏览专用皇家园林1.5基础种植7.4. 1基肥8.3.2纪念公园4. 1.145.2.8假山7.1.1假植7.4.12郊野公园4.1.24街旁绿地4.1.18节约型园林8.1.4借景5.2.4浸穴7.4.13景点3.1.5景观3.1.3景墙6.6.330
+
+## 第37页
+
+景区3.1.6景石景物居民社会调控规划居住绿地22K客土7.4.3扩初设计6.8.2浏览专用拉底.14廊6.5.9历史名园4.1.13立体绿化6.3.2列植6.3.6房城乡建设部信息公6.3.22林缘线6.3.23楼6.5.6漏窗6.5.17漏景5.2.9裸根苗木7.4.6绿道4.2.10绿地率4.2.4绿化覆盖率4.2.3绿化覆盖面积4.2.2绿篱6.3.1631
+
+## 第38页
+
+M盲人公园墓园牌坊6.5.14攀缘植物7.3.6喷灌7.4.16喷泉6.7.4盆景5.2.11盆景园平曲线坡比值6.2.7瀑布6.7.5浏览专用6.3.11群植6.3.7R人工植物群落6.3.12人均公园绿地面积4.2.5容器苗7.4.7S设计变更8.2.4设计交底8.2.332
+
+## 第39页
+
+社区公园4.1.4生产绿地4.1.19生态补偿生态廊道生态敏感区生态修复2.13生态园林城市8.1.2施工图设计6.8.3施工组织设计8.2.2石子画6.4.8世界遗产2.0.4适地适树6.3.21收顶.1.15疏林草地6.3.14疏枝8.3.7树阵6.3.18竖曲线6.4.2竖向设计浏览专6.1.4水帘X6.7.8私家园林5.1.6寺庙园林5.1.7苏州园林5.1.9塑山7.1.3宿根花卉7.3.4塔6.5.15踏7.1.8台6.5.5台地花园6.2.633
+
+## 第40页
+
+太湖石7.1.6特许经营8.1特置厅堂汀步亭5.4透景线6.1.6土壤安息角6.2.8土石方平衡6.2.2微地形2.3浏览专文人园林1.8氏温室6.5.3屋顶绿化6.3.3无障碍坡道6.4.9乡土植物7.3.3相地5.2.1镶隅7. 1. 11楔形绿地4.2.7泄水口7.2.2榭6.5.10胸径7.4.17修剪8.3.3压顶7.1.1334
+
+## 第41页
+
+岩石园4.1.8一池三山5.2遗址公园抑景溢水口游客服务中心.5.2游览线3.2.5游乐公园4. 1.16囿5.1.3雨洪管理设计6.1.5郁闭度浏览专用6.3.10园林3园林匾额6.6.5园林布局6.1.1园林城市8.1.12.0.10园林工程管理8.2.1园林建筑6.5.1园林理水6.7.1园林小品6.6.1园林意境5.2.2园林楹联6.6.4园林植物7.3.1园桥6.4.4苑5.1.4云墙6.5.12云梯7.1.1235
+
+## 第42页
+
+造景栈道障景照壁5.13整地7.4.2整形8.3.6植物季相6.3.20植物园4.1.7智慧景区3.2.6浏览专用置石1.4种植成活率.15种植池 (钵)6.3.19种植密度6.3.9种植设计6.3.1种植土7.4.47. 4.14专类公园4.1.3追肥8.3.1自然植物群落6.3.13综合公园4.1.236
+
+## 第43页
+
+房城乡建设部信息公开附录B英文索引Aadding fertilizer8.3.1aerial ladders7.1.12amusement park4.1.16angle of repose of soil6.2.8archaeological and site park4.1.15浏览专用arranged hidden scene2.7artificial rockery3attached green sp.1.21avenue tree6.3.17Dbare-root7.4.68.3.2bian'é in garden6.6.5big tree transplanting7.4.8boat house6.5.11borrowed soil7.4.3borrowing landscape5.2.4botanical garden4.1.7branch point7.4.18canopy line of the plants6.3.2237
+
+## 第44页
+
+capping7.1.13cemetery gardenchildren parkchoosing seedlingsclassical gardencloud wallh.5.12comprehensive park4.1.2construction document explanation8.2.3construction design,working drawing6.8.3core landscape zone, core scenic3.1.7cornerrapstone7.1.10corner filling set1.11corresponding view2.5corridor6.5.9country park4.1.24couplet written on scroll, couplet on p6.6.4crown diameter6.3.10cutting back8.3.8Ddesign alteration8.2.4design development6.8.2diameter of trunk7.4.17drain opening7.2.2drainage design and storm water management6.1.5drop6.7.6Eearthwork balance6.2.238
+
+## 第45页
+
+ease accessfor the disabled6.4.9eco-compensationecological corridorecological garden cityecologicalrestorationecological sensitive area4.2.12息engineering negotiation;construction req8.2.5engineering supervision8.2.6euphrates, footing7.1.14famous scenery，famous11浏览专氏feature pavement建设部信息feature wall6.6.3field planting7.4.106.3.15forest edge6.3.23foundation planting7. 4.1fountain6.7.4franchise8.1.5Ggarden4.1.12garden and park2.0.3garden city8.1.1garden structure6.5.1general contracting plan8.2.2glassless windows6.5.17green coverage ratio4.2.339
+
+## 第46页
+
+green space attached to housing estate, residential4.1.22greenspacegreen space attached to urban roadgreen space ratiogreen wedgegreenhouse5.3greenway4.2.10ground cover plant7.3.5group planting6.3.8hall建设部信息公浏览专8hedge用3.167.4.12historical garden, historical park4.1.13historical tree and famous tree7.3.8historical tree potential resources7.3.96.5.16imperial garden; Royal garden5.1.5land preparation7.4.2landform design, grading design6.2.1landscape3.1.3landscape architecture2.0.1landscape architecture2.0.240
+
+## 第47页
+
+landscape architecture design6.1.2landscape architecture management8.2.landscape bridgelandscape construction engineering：10landscape evaluation2.3landscape feature3.1.4landscape layout6.1.1landscape plant7.3.1landscape stone7.1.5landscaping5.2.3lawn.3.7leak scene2.9linear park4.1.17linear planting6.3.6M浏览专用man-maderockery7.1.1Xmasa terrace park6.2.6mass planting6.3.7matching species with the site6.3.21meaning of landscape5.2.2memorial arch6.5.14memorial park4.1.14mild-lawn6.2.4Nnannorelief6.2.3nappe6.7.841
+
+## 第48页
+
+national park2.0.9native specie7.3natural plant communitynursery0obstacle view, view barrier5.2.6open forest and grassland6.3.14ornamental plant7.3.2overfall gap7.2.1overflow dam浏览专用7.2.3park2.0.84. 1. 11park land per capita4.2.5pavilion6.5.7pavilion6.5.46.4.8penjing garden, miniature landscape4.1.9penjing5.2.11perennial flower7.3.4pergola, trellis6.6.2pest control8.3.5piled hill, hill making7.1.2place other than one's own hometown allopatry,7.3.10exsitu conservationplane curve6.4.1plank road built along a cliff6.4.542
+
+## 第49页
+
+plant hole and trough7.4.14planterplanting soilplanting density6.3.：9planting designplants survivalrate.4.15plants of container7.4.7platform6.5.6pre-watering planting hole7.4.13private garden5.1.6protected green buffer4.1.20浏览专用pruning3.3.3public parkRrejuvenation of oree8.3.4residential park4. 1. 4resource-saving landscape8.1.4retaining wall6.2.5revetment in garden6.7.2roadside green space4.1.18rock garden4.1.8roof greening6.3.3Sscenic and historic areas2.0.5scenic and historic areas of China3.1.8scenic and historic areas planning3.2.1scenic and historic areas system3.2.243
+
+## 第50页
+
+scenicforestland4.1.26scenicresourcescenic spotscenic vista8scenic zone, landscape zoneschematic design6.8.1scholars’ garden5.1.8screen wall6.5.13seasonal appearance of plant6.3.20setting root water7.4.11shaping8.3.6signboard.6.6simulated plant commu氏.3.12建设部信息site investigation,essment5.2.1site planning6.1.36.7.3slope ratio6.2.7浏览专small garden ornaments and site ffurniture6.6.1smart scenic and historic areas3.2.6social regulation planning for residents3.2.4sparse8.3.7special setting7.1.7specialized park4.1.3specimen planting, isolated planting6.3.4sprinkler irrigation7.4.16squatting side rock7.1.9steppingstone6.4.3stone arrangement， stone setting7.1.4stone stair6.4.644
+
+## 第51页
+
+Suzhou gardens5.1.9symmetricalplanting,coupledplanting6.33TTaihu rocktap-stamp steptemple garden5.1.7tendril climber plant7.3.6ten-word pithy formula7.1.16the planting ratio of trees and6.3.11top end7.1.15touring route2.5浏览专tower5.15traditional garden5.1.2transplanting7.4.9tree array6.3.18urban biodiversity4.2.14urban green buffer4.2.6urban green space2.0.6urban green space boundary line, urban green line4.2.8urban green space system2.0.7urban green space system planning4.2.1urban heat island effect4.2.15urban water body boundary line, urban blue line4.2.9urban wetland park4.1.25vertical design, landscape section and elevations6.1.445
+
+## 第52页
+
+vertical curve6.4.2vertical greening6.3.view corridorvisitor centervisitors capacityWwater system layout in garden6.7.1water-fall6.7.5waterfront pavilion6.5.10world heritage浏览专用2.0.4yi-chi-san-shan,and three moun5.2.10you garden ; hunting garden5.1.3yuan garden5.1.4住房城zoological garden， zoo4.1.646
+
+## 第53页
+
+本标准用词说明不同的用词说明如下：1）表示很严格，非这样做不可的：正面词采用“必须”，反面词采用“严禁”;2）表示严格，在正常情况下均应这样做的：正面词采用“应”，反面词采用“不应”或“不得”；3）表示允许稍有选择，在条件许可时首先这样做的：正面词采用“宜”反面词采用“不宜”；4）表示有选择，在一定条件下可以这样做的，采用“可”。X2条文中指明应按其他有关标准执行的写法为：“应符合……的规定”或“应按…执行主房47
