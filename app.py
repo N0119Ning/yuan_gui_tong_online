@@ -8,6 +8,12 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
+# Copy Streamlit Cloud secrets into os.environ for non-Streamlit modules
+if hasattr(st, "secrets"):
+    for k, v in st.secrets.items():
+        if k not in os.environ:
+            os.environ[k] = str(v)
+
 project_root = Path(__file__).parent
 sys.path.insert(0, str(project_root))
 
