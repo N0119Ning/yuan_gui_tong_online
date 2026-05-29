@@ -272,18 +272,8 @@ def load_invite_codes():
 
 
 def get_daily_usage(code: str) -> int:
-    import sqlite3, time
-    db = project_root / "data" / "conversations.db"
-    if not db.exists():
-        return 0
-    conn = sqlite3.connect(str(db))
-    today = time.strftime("%Y-%m-%d")
-    row = conn.execute(
-        "SELECT COUNT(*) FROM conversations WHERE date(timestamp)=? AND invite_code=?",
-        (today, code),
-    ).fetchone()
-    conn.close()
-    return row[0] if row else 0
+    from utils.conversation_logger import get_daily_usage as _usage
+    return _usage(code)
 
 
 

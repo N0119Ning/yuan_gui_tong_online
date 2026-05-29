@@ -1,39 +1,24 @@
-"""Conversation logger: SQLite-based, auto-creates table."""
+"""Conversation logger — Supabase backend, survives redeploy."""
 
-import sqlite3
+import os
 import json
 import time
-from pathlib import Path
-
-DB_PATH = Path(__file__).parent.parent / "data" / "conversations.db"
+from supabase import create_client
 
 
-def _get_conn():
-    DB_PATH.parent.mkdir(parents=True, exist_ok=True)
-    conn = sqlite3.connect(str(DB_PATH))
-    conn.execute("""
-        CREATE TABLE IF NOT EXISTS conversations (
-            id INTEGER PRIMARY KEY AUTOINCREMENT,
-            timestamp TEXT NOT NULL,
-            invite_code TEXT DEFAULT '',
-            query TEXT NOT NULL,
-            answer TEXT NOT NULL,
-            retrieved TEXT,
-            feedback TEXT,
-            helpful INTEGER
-        )
-    """)
-    # Add invite_code column if upgrading existing DB
-    try:
-        conn.execute("ALTER TABLE conversations ADD COLUMN invite_code TEXT DEFAULT ''")
-    except sqlite3.OperationalError:
-        pass
-    conn.commit()
-    return conn
+def _get_client():
+    url = os.environ.get("SUPABASE_URL", "")
+    key = os.environ.get("SUPABASE_KEY", "")
+    if not url or not key:
+        return None
+    return create_client(url, key)
 
 
 def log(query: str, answer: str, results: list, invite_code: str = "", feedback: str = "", helpful: int = 0):
-    conn = _get_conn()
+    client = _get_client()
+    if client is None:
+        return
+
     retrieved_json = json.dumps([
         {
             "standard": r.get("metadata", {}).get("standard_code", ""),
@@ -43,22 +28,24 @@ def log(query: str, answer: str, results: list, invite_code: str = "", feedback:
         for r in (results or [])[:5]
     ], ensure_ascii=False)
 
-    conn.execute(
-        "INSERT INTO conversations (timestamp, invite_code, query, answer, retrieved, feedback, helpful) VALUES (?,?,?,?,?,?,?)",
-        (time.strftime("%Y-%m-%d %H:%M:%S"), invite_code, query, answer[:2000], retrieved_json, feedback, helpful),
-    )
-    conn.commit()
-    conn.close()
+    client.table("conversations").insert({
+        "timestamp": time.strftime("%Y-%m-%d %H:%M:%S"),
+        "invite_code": invite_code,
+        "query": query,
+        "answer": answer[:2000],
+        "retrieved": retrieved_json,
+        "feedback": feedback,
+        "helpful": helpful,
+    }).execute()
 
 
-def stats():
-    conn = _get_conn()
-    total = conn.execute("SELECT COUNT(*) FROM conversations").fetchone()[0]
-    today = conn.execute(
-        "SELECT COUNT(*) FROM conversations WHERE date(timestamp)=date('now','localtime')"
-    ).fetchone()[0]
-    feedbacks = conn.execute(
-        "SELECT feedback, COUNT(*) FROM conversations WHERE feedback!='' GROUP BY feedback ORDER BY COUNT(*) DESC"
-    ).fetchall()
-    conn.close()
-    return {"total": total, "today": today, "by_feedback": dict(feedbacks)}
+def get_daily_usage(code: str) -> int:
+    client = _get_client()
+    if client is None:
+        return 0
+    today = time.strftime("%Y-%m-%d")
+    try:
+        r = client.table("conversations").select("id", count="exact").eq("invite_code", code).gte("timestamp", today).execute()
+        return r.count or 0
+    except Exception:
+        return 0
