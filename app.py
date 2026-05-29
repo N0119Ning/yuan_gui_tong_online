@@ -419,13 +419,13 @@ def main():
                 '<div style="background:#EEF5F0;border-left:4px solid #2F6B55;'
                 'border-radius:12px;padding:14px 20px;color:#4B5563;font-size:0.95rem;'
                 'text-align:center;margin:16px 0;">'
-                '首次使用请先初始化知识库</div>',
+                '点击下方开始使用，加载预构建知识库</div>',
                 unsafe_allow_html=True,
             )
             c1, c2, c3 = st.columns([1, 2, 1])
             with c2:
-                if st.button("初始化知识库", type="primary", use_container_width=True):
-                    load_and_build_kb()
+                if st.button("开始使用", type="primary", use_container_width=True):
+                    load_existing_kb()
         return
 
     # ---- Sidebar ----
