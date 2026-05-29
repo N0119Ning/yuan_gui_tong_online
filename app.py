@@ -473,11 +473,11 @@ def main():
 
         col1, col2 = st.columns(2)
         with col1:
-            if st.button("初始化", type="primary", use_container_width=True,
+            if st.button("加载知识库", type="primary", use_container_width=True,
                          disabled=st.session_state.kb_building):
-                load_and_build_kb()
+                load_existing_kb()
         with col2:
-            if st.button("加载已有", type="secondary", use_container_width=True,
+            if st.button("刷新", type="secondary", use_container_width=True,
                          disabled=st.session_state.kb_building):
                 load_existing_kb()
 
@@ -507,7 +507,7 @@ def main():
         st.markdown(
             '<div style="background:#EEF5F0;border-left:4px solid #2F6B55;'
             'border-radius:12px;padding:16px 20px;color:#4B5563;font-size:0.95rem;">'
-            '在侧边栏点击「加载已有」加载知识库，或「初始化」构建新库。</div>',
+            '在侧边栏点击「加载知识库」开始使用。</div>',
             unsafe_allow_html=True,
         )
         return
