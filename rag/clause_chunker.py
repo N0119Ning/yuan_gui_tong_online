@@ -11,10 +11,15 @@ class Clause:
 
 
 # Match clause numbers anywhere in text (OCR output is continuous, no line breaks)
-CLAUSE_BOUNDARY = re.compile(r"(第\d+(?:\.\d+)*条)")
+# Supports both half-width "." and full-width "．" dots (U+FF0E)
+CLAUSE_BOUNDARY = re.compile(r"(第\s*\d+(?:[.．]\d+)*\s*条)")
 
-# Match standalone numeric clause: 3.1.2, 6.0.3 — OCR text has no space after numbers
-NUMERIC_CLAUSE = re.compile(r"(?:^|[。；\n])\s*(\d+(?:\.\d+)+)")
+# Match standalone numeric clause: 3.1.2, 6.0.3, 3．0．1
+# Some PDFs use full-width dots between numbers
+NUMERIC_CLAUSE = re.compile(r"(?:^|[。；\n])\s*(\d+(?:[.．·]\d+)+)")
+
+# Full-width digit and dot conversion for standardization
+_FULLWIDTH_DOT = "．"  # ．
 
 # Sub-clause: 1)、2）、(1)、(2) — used for splitting long clauses
 SUB_CLAUSE = re.compile(r"(?:^|\n|[。；])\s*[\(（]?\d+[\)）][\.、]?\s")
@@ -155,13 +160,32 @@ class ClauseChunker:
         return clauses
 
 
+def _normalize_clause_num(num: str) -> str:
+    """Convert full-width dots/digits to half-width for consistent storage."""
+    if not num:
+        return num
+    # Full-width dot → half-width dot
+    num = num.replace("．", ".")  # ．
+    # Also handle other dot-like characters
+    num = num.replace("·", ".")  # middle dot ·
+    num = num.replace("•", ".")  # bullet •
+    # Full-width digits → half-width
+    result = []
+    for ch in num:
+        if '０' <= ch <= '９':
+            result.append(chr(ord(ch) - 0xFEE0))
+        else:
+            result.append(ch)
+    return ''.join(result).strip()
+
+
 def _detect_clause_number(text: str) -> str | None:
     m = CLAUSE_BOUNDARY.search(text)
     if m:
-        return m.group(1).replace("第", "").replace("条", "")
+        return _normalize_clause_num(m.group(1).replace("第", "").replace("条", ""))
     m = NUMERIC_CLAUSE.search(text)
     if m:
-        return m.group(1)
+        return _normalize_clause_num(m.group(1))
     return None
 
 

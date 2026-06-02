@@ -56,6 +56,12 @@ def _count_chinese(text: str) -> int:
 
 
 def _clean_text(text: str) -> str:
+    # Normalize full-width dots/digits to half-width for consistent processing
+    text = text.replace("．", ".")  # full-width dot → ASCII dot
+    # Full-width digits
+    for fw, hw in zip("０１２３４５６７８９", "0123456789"):
+        text = text.replace(fw, hw)
+
     text = re.sub(r"\n{3,}", "\n\n", text)
     text = re.sub(r"\n\d{1,3}\n", "\n", text)
     lines = text.split("\n")
@@ -69,7 +75,31 @@ def _clean_text(text: str) -> str:
             result[-1] += stripped
         else:
             result.append(stripped)
-    return "\n".join(result)
+    text = "\n".join(result)
+
+    # Fix concatenated table numbers: "1.01.53.0" → "1.0, 1.5, 3.0"
+    # Text-layer PDFs lose table column separators, merging adjacent cell values
+    text = _separate_table_numbers(text)
+
+    return text
+
+
+def _separate_table_numbers(text: str) -> str:
+    """Insert separators between concatenated decimal numbers (PDF table artifact).
+
+    Pattern: (X.X)(Y.Y) where two decimal values are adjacent with no delimiter.
+    Example: "1.01.53.0" → "1.0, 1.5, 3.0"
+             "35~1103.54.0" → "35~110, 3.5, 4.0"
+    Only matches X.X format (1-2 digits after decimal) — clause numbers like
+    3.0.2 (3 parts) are not affected.
+    """
+    pattern = re.compile(r'(\d+\.\d{1,2})(?=\d+\.\d{1,2})')
+    for _ in range(5):  # Repeated passes to handle chains
+        new_text = pattern.sub(r'\1, ', text)
+        if new_text == text:
+            break
+        text = new_text
+    return text
 
 
 def _resolve_path(p: str) -> Path:
@@ -107,7 +137,7 @@ class PDFParser:
             return text
 
         # Scanned page — render to image, run OCR
-        pix = page.get_pixmap(dpi=200)
+        pix = page.get_pixmap(dpi=300)
         img = pix.tobytes("png")
         result = ocr.ocr(img, cls=True)
         if not result or not result[0]:

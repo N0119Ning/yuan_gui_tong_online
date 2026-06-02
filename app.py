@@ -406,7 +406,7 @@ def main():
 
     st.markdown('<div class="main-title">园规通</div>', unsafe_allow_html=True)
     st.markdown(
-        '<div class="sub-title">风景园林设计规范智能助手 · 9本规范 · 1168条条款</div>',
+        '<div class="sub-title">风景园林设计规范智能助手 · 11本规范 · 1557条条款</div>',
         unsafe_allow_html=True,
     )
 
@@ -432,8 +432,8 @@ def main():
         <div class="welcome-overlay">
             <h2>欢迎使用园规通！</h2>
             <p style="color:#374151;font-size:1rem;">
-            覆盖 <b>9本</b> 风景园林核心国标/行标<br>
-            <b>9本规范 · 1168条条款</b>
+            覆盖 <b>11本</b> 风景园林核心国标/行标<br>
+            <b>11本规范 · 1557条条款</b>
             </p>
         </div>
         """, unsafe_allow_html=True)
