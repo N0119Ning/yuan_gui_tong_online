@@ -246,6 +246,8 @@ FULL_NAMES = {
     "GB50763": "无障碍设计规范",
     "GB51192": "公园设计规范",
     "GB55014": "园林绿化工程项目规范",
+    "GB55019": "建筑与市政工程无障碍通用规范",
+    "GB55037": "建筑防火通用规范",
 }
 
 
@@ -406,7 +408,7 @@ def main():
 
     st.markdown('<div class="main-title">园规通</div>', unsafe_allow_html=True)
     st.markdown(
-        '<div class="sub-title">风景园林设计规范智能助手 · 11本规范 · 1557条条款</div>',
+        '<div class="sub-title">风景园林设计规范智能助手 · 11本规范 · 1562条条款</div>',
         unsafe_allow_html=True,
     )
 
@@ -433,7 +435,7 @@ def main():
             <h2>欢迎使用园规通！</h2>
             <p style="color:#374151;font-size:1rem;">
             覆盖 <b>11本</b> 风景园林核心国标/行标<br>
-            <b>11本规范 · 1557条条款</b>
+            <b>11本规范 · 1562条条款</b>
             </p>
         </div>
         """, unsafe_allow_html=True)
